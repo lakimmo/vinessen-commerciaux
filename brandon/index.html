@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="/hero-logo.png">
 <title>Vinessen - Chaque bouteille raconte son histoire</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -965,6 +966,95 @@
     .step4-icon{display:none;}
     .steps-section{padding-left:14px;padding-right:14px;}
   }
+
+  /* ================= CORNER MODULABLE ================= */
+  .corner-tabs{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:36px 0 40px;
+  }
+  .corner-tab{
+    font-family:'Inter',sans-serif;
+    font-size:13.5px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    padding:12px 22px;
+    border-radius:999px;
+    border:1px solid rgba(56,42,32,0.18);
+    background:#fff;
+    color:var(--ink);
+    cursor:pointer;
+    transition:background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .corner-tab:hover{border-color:var(--copper);}
+  .corner-tab.active{
+    background:var(--copper);
+    border-color:var(--copper);
+    color:var(--cream);
+  }
+  .corner-panel{display:none;}
+  .corner-panel.active{display:block;}
+  .corner-split{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+  }
+  .corner-eyebrow{
+    font-family:'Inter',sans-serif;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color:var(--copper);
+    margin-bottom:14px;
+    display:block;
+  }
+  .corner-tagline{
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
+    color:var(--ink);
+    margin-bottom:14px;
+    line-height:1.2;
+  }
+  .corner-desc{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    line-height:1.6;
+    margin-bottom:24px;
+    max-width:420px;
+  }
+  .corner-specs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 0;
+    font-size:13.5px;
+    color:var(--ink);
+  }
+  .corner-specs .item{
+    padding-right:16px;
+    margin-right:16px;
+    border-right:1px solid rgba(56,42,32,0.2);
+  }
+  .corner-specs .item:last-child{border-right:none;margin-right:0;padding-right:0;}
+  .corner-specs strong{font-weight:700;}
+  .corner-visual{
+    border-radius:4px;
+    overflow:hidden;
+    box-shadow:0 14px 36px rgba(56,42,32,0.12);
+  }
+  .corner-visual img{width:100%;display:block;}
+  .corner-download{
+    text-align:center;
+    margin-top:48px;
+  }
+  @media (max-width:780px){
+    .corner-split{grid-template-columns:1fr;gap:22px;}
+    .corner-split-right{order:-1;}
+    .corner-tagline{font-size:24px;}
+  }
 </style>
 </head>
 <body>
@@ -986,7 +1076,7 @@
   <p class="lede">Un QR code sur l'étiquette avant. Une vidéo du vigneron dégustant et présentant son propre vin. Sous-titrée automatiquement dans la langue du consommateur.</p>
 
   <div class="hero-vsl-wrap">
-    <video class="hero-vsl-video" controls playsinline preload="metadata" src="/hero-vsl-video.mp4"></video>
+    <video class="hero-vsl-video" controls playsinline preload="metadata" src="/presentation-vinessen-fr.mp4"></video>
   </div>
 
   <div class="divider-line"></div>
@@ -1031,7 +1121,7 @@
         <div class="step-body">
           <div class="step-num"><span class="dot"></span>Étape 1</div>
           <h3>Vous choisissez</h3>
-          <p>Nous proposons 240 références couvrant tous les styles et toutes les régions. 51 d'entre elles disposent déjà de leur propre vidéo du vigneron, et 90 de plus sont en préparation. Composez votre assortiment exactement comme vous le souhaitez : sans minimum de commande.</p>
+          <p>Nous proposons 240 références couvrant tous les styles et toutes les régions. 51 d'entre elles disposent déjà de leur propre vidéo du vigneron, et 90 de plus sont en préparation. Vous composez votre gamme à la carte, sans minimum de commande.</p>
         </div>
       </div>
 
@@ -1039,14 +1129,14 @@
         <div class="step-body">
           <div class="step-num"><span class="dot"></span>Étape 2</div>
           <h3>Ils scannent</h3>
-          <p>Dans un monde où la plupart des bouteilles se choisissent au prix ou à l'étiquette, les nôtres se distinguent autrement : un QR code discret intégré à l'étiquette avant, qui laisse deviner une histoire à découvrir. Un simple scan suffit.</p>
+          <p>Dans un monde où la plupart des bouteilles se choisissent au prix ou à l'étiquette, les nôtres se distinguent autrement : un QR code discret intégré à l'étiquette avant, qui intrigue et invite à découvrir l'histoire derrière. Un simple scan suffit.</p>
         </div>
       </div>
 
       <div class="step-card step-full">
         <div class="step-num"><span class="dot"></span>Étape 3</div>
         <h3>Ils regardent</h3>
-        <p>En famille, autour d'un apéritif, à table ou seul - votre client déguste le vin tout en découvrant l'histoire du vigneron et ses conseils de dégustation. En une minute, un contenu accessible même à ceux qui n'ont jamais vraiment « compris » le vin. Une expérience authentique, pour les amateurs comme pour les novices. Quelques exemples ci-dessous (sous-titrés automatiquement en 15 langues).</p>
+        <p>En famille, autour d'un apéritif, à table ou seul - votre client déguste le vin tout en découvrant l'histoire du vigneron et ses conseils de dégustation. En une minute, même celles et ceux qui n'ont jamais vraiment « compris » le vin suivent sans effort. Une expérience authentique, pour les amateurs comme pour les novices. Quelques exemples ci-dessous (sous-titrés automatiquement en 15 langues).</p>
         <div class="video-gallery">
           <div class="video-item">
             <div class="video-thumb has-poster" onclick="vinessenOpenVideo('1187461640')">
@@ -1088,9 +1178,6 @@
             <div class="step-num"><span class="dot"></span>Étape 4</div>
             <h3>Ils reviennent</h3>
             <p>La prochaine fois que ce client achètera du vin, il ne se souviendra pas du prix payé - il se souviendra de l'histoire qu'il a vue. C'est ce qui le fait revenir vers votre gamme, plutôt que vers la bouteille anonyme d'un concurrent.</p>
-            <div class="diff-highlight">
-              <p>Un vin acheté pour son prix se remplace facilement par le suivant sur l'étagère. Un vin associé à un visage et une histoire devient une raison d'y revenir.</p>
-            </div>
           </div>
         </div>
       </div>
@@ -1098,7 +1185,7 @@
 
     <div class="demo-split">
       <div class="demo-split-left">
-        <span class="eyebrow on-dark">Voyez-le en situation</span>
+        <span class="eyebrow on-dark">En action</span>
         <h3 class="demo-headline">Voici à quoi ça<br>ressemble <em>en situation réelle.</em></h3>
         <p class="demo-sub">Juste un téléphone, une bouteille, et un scan. Le moment où votre client découvre l'histoire derrière l'étiquette.</p>
       </div>
@@ -1176,7 +1263,7 @@ function vinessenPlayDemo(){
   frame.dataset.loaded = "1";
   frame.onclick = null;
   frame.style.cursor = "default";
-  frame.innerHTML = '<video src="/closing-video.mp4" controls autoplay playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>';
+  frame.innerHTML = '<video src="/scannez-video.mp4" controls autoplay playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>';
 }
 </script>
 
@@ -1191,24 +1278,18 @@ function vinessenPlayDemo(){
     <div class="section-head center">
       <span class="eyebrow">Les bénéfices</span>
       <h2>Ce que ça change, concrètement</h2>
+      <p>Face à un marché du vin en baisse, notre solution inverse la tendance en misant sur l'innovation et une nouvelle génération de consommateurs.</p>
     </div>
     <div class="two-col">
       <div class="benefit-panel accent">
         <span class="eyebrow on-dark">Pour vous</span>
         <h3>Un vrai levier de différenciation</h3>
         <ul>
-          <li><span class="mark">-</span>Une offre disruptive dans une catégorie où tout se ressemble</li>
-          <li class="li-block">
-            <span class="mark">-</span>Un argument concret pour vendre auprès de :
-            <ul class="benefit-sublist" style="margin-left:10px;margin-top:6px;">
-              <li><strong>Hôtellerie &amp; restauration :</strong> rend le vin accessible aux clients même sans sommelier, transforme chaque verre en expérience, et aide à former le personnel</li>
-              <li><strong>Distribution :</strong> propose quelque chose de différent qui se démarque en rayon, là où tout se ressemble</li>
-              <li><strong>E-commerce :</strong> résout le problème de ne pas pouvoir goûter ni poser de questions - le client voit le vigneron, entend l'histoire, et achète avec la même confiance qu'en boutique</li>
-            </ul>
-          </li>
+          <li><span class="mark">-</span>Une offre disruptive dans un rayon où tout se ressemble</li>
           <li><span class="mark">-</span>Accès à plus de 240 références, sans minimum de commande</li>
           <li><span class="mark">-</span>Une raison pour vos clients de revenir spécifiquement vers votre gamme</li>
-          <li><span class="mark">-</span>Parle à une nouvelle génération, à l'aise avec le scan et la vidéo</li>
+          <li><span class="mark">-</span>Attire un public plus jeune : parle à une nouvelle génération, à l'aise avec le scan et la vidéo</li>
+          <li><span class="mark">-</span>Un corner modulable qui capte l'attention en rayon et fait venir le client - à voir plus bas</li>
         </ul>
       </div>
       <div class="benefit-panel">
@@ -1226,13 +1307,100 @@ function vinessenPlayDemo(){
   </div>
 </section>
 
+<!-- ================= CORNER MODULABLE ================= -->
+<section id="corner-modulable">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Le corner modulable</span>
+      <h2>Un espace qui capte l'attention</h2>
+      <p>Un dispositif évolutif pour valoriser vos vins et les vignerons qui les font. Une arche signalétique identifiable qui s'adapte à la surface disponible en rayon - du corner compact jusqu'à un véritable espace de découverte. Modulable, identifiable, évolutif : un corner pensé pour convertir, quel que soit l'espace disponible.</p>
+    </div>
+
+    <div class="corner-tabs">
+      <button class="corner-tab active" data-corner="essentiel" onclick="vinessenShowCorner('essentiel', this)">L'essentiel</button>
+      <button class="corner-tab" data-corner="elargie" onclick="vinessenShowCorner('elargie', this)">L'expérience élargie</button>
+      <button class="corner-tab" data-corner="immersion" onclick="vinessenShowCorner('immersion', this)">L'immersion Vinessen</button>
+    </div>
+
+    <div class="corner-panel active" id="corner-panel-essentiel">
+      <div class="corner-split">
+        <div class="corner-split-left">
+          <span class="corner-eyebrow">L'essentiel</span>
+          <p class="corner-tagline">Petite surface, grand impact</p>
+          <p class="corner-desc">Un format compact pour créer un premier espace Vinessen - une arche signalétique identifiable et 6 x ¼ de box disposés en deux rangées dos à dos. Suffisant pour se démarquer du rayon, sans prendre toute la place.</p>
+          <div class="corner-specs">
+            <span class="item"><strong>2 m²</strong> au sol</span>
+            <span class="item"><strong>792</strong> bouteilles</span>
+            <span class="item"><strong>6</strong> fiches QR code</span>
+          </div>
+        </div>
+        <div class="corner-split-right">
+          <div class="corner-visual"><img src="/corner-essentiel.jpg" alt="Corner modulable Vinessen - configuration L'essentiel"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="corner-panel" id="corner-panel-elargie">
+      <div class="corner-split">
+        <div class="corner-split-left">
+          <span class="corner-eyebrow">L'expérience élargie</span>
+          <p class="corner-tagline">Plus de références, une visibilité renforcée</p>
+          <p class="corner-desc">Plus de visibilité, plus de références, toujours la même structure centrale - la base de L'essentiel complétée par 4 colonnes dos à dos, à 2 références chacune.</p>
+          <div class="corner-specs">
+            <span class="item"><strong>2,75 m²</strong> au sol</span>
+            <span class="item"><strong>985</strong> bouteilles</span>
+            <span class="item"><strong>14</strong> fiches QR code</span>
+          </div>
+        </div>
+        <div class="corner-split-right">
+          <div class="corner-visual"><img src="/corner-elargie.jpg" alt="Corner modulable Vinessen - configuration L'expérience élargie"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="corner-panel" id="corner-panel-immersion">
+      <div class="corner-split">
+        <div class="corner-split-left">
+          <span class="corner-eyebrow">L'immersion Vinessen</span>
+          <p class="corner-tagline">Plus qu'un corner, une destination à part entière</p>
+          <p class="corner-desc">Deux arches signalétiques, huit colonnes et un îlot central transforment un simple rayon en un véritable moment de découverte - l'endroit où les clients s'arrêtent, scannent, et repartent avec des bouteilles.</p>
+          <div class="corner-specs">
+            <span class="item"><strong>13,6 m²</strong> au sol</span>
+            <span class="item"><strong>1 968</strong> bouteilles</span>
+            <span class="item"><strong>2</strong> arches signalétiques</span>
+          </div>
+        </div>
+        <div class="corner-split-right">
+          <div class="corner-visual"><img src="/corner-immersion.jpg" alt="Corner modulable Vinessen - configuration L'immersion Vinessen"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="corner-download">
+      <a class="cta-btn" href="/corner-modulable-vinessen.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+        Voir la présentation complète du corner
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+function vinessenShowCorner(id, btn){
+  document.querySelectorAll('.corner-panel').forEach(function(p){ p.classList.remove('active'); });
+  document.getElementById('corner-panel-' + id).classList.add('active');
+  document.querySelectorAll('.corner-tab').forEach(function(t){ t.classList.remove('active'); });
+  btn.classList.add('active');
+}
+</script>
+
 <!-- ================= WHY VINESSEN ================= -->
 <section class="dark">
   <div class="wrap">
     <div class="section-head center">
       <span class="eyebrow on-dark">Pourquoi Vinessen</span>
-      <h2 style="color:#F7F2E7;">20 ans de terrain, pas une startup de passage</h2>
-      <p>Le concept vidéo est nouveau. L'entreprise derrière ne l'est pas - 20 ans d'export à travers l'Europe, l'Australie, l'Afrique, l'Amérique du Nord et l'Asie.</p>
+      <h2 style="color:#F7F2E7;">+20 ans d'expérience en distribution de vin</h2>
+      <p>Le concept vidéo est nouveau. L'entreprise derrière ne l'est pas - 20 ans de distribution à travers l'Europe, l'Australie, l'Afrique, l'Amérique du Nord et l'Asie.</p>
     </div>
     <div class="trust-strip">
       <div class="trust-cell"><div class="big">20+</div><div class="lbl">Années d'expérience terrain</div></div>
@@ -1278,12 +1446,12 @@ function vinessenPlayDemo(){
         <p>Oui, c'est vous qui décidez. Chaque référence n'a pas besoin de démarrer avec un QR code dès le premier jour. Beaucoup d'importateurs commencent par le tester sur une poignée de références, observent la réaction de leurs clients, puis étendent progressivement.</p>
       </details>
       <details class="faq-item">
-        <summary>Dois-je changer quoi que ce soit de mon côté - packaging, process d'import, douanes ?</summary>
-        <p>Aucun changement nécessaire. Le QR code est imprimé directement sur l'étiquette avant, avant même l'expédition de la bouteille chez vous - elle est importée, stockée et vendue exactement comme n'importe quelle autre bouteille.</p>
+        <summary>Dois-je changer quoi que ce soit de mon côté ?</summary>
+        <p>Aucun changement. La bouteille est distribuée exactement comme n'importe quelle autre bouteille.</p>
       </details>
       <details class="faq-item">
         <summary>Dans quelles langues les vidéos sont-elles disponibles ?</summary>
-        <p>Les vidéos sont automatiquement sous-titrées en français, anglais, russe, thaï, portugais, vietnamien, allemand, chinois, espagnol, coréen, arabe, japonais, polonais et italien. Votre langue n'est pas dans la liste ? Nous pouvons facilement ajouter des sous-titres dans votre langue, ou dans toute autre langue dont vous auriez besoin.</p>
+        <p>Les vidéos sont automatiquement sous-titrées en français, anglais, russe, thaï, portugais, vietnamien, allemand, chinois, espagnol, coréen, arabe, japonais, polonais et italien. Votre langue n'est pas dans la liste ?</p>
       </details>
     </div>
   </div>
@@ -1325,14 +1493,14 @@ function vinessenPlayDemo(){
     <p class="closing-link-block">
       <a class="cta-btn" href="https://vinessen.fr/" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
-        Voir le site &amp; toutes nos vidéos de vin
+        Voir notre plateforme vidéo
       </a>
     </p>
   </div>
 </section>
 
 <footer>
-  <img src="/footer-logo.png" alt="Vinessen - Chaque bouteille raconte une histoire">
+  <img src="/footer-logo-new.png" alt="Vinessen - Chaque bouteille raconte une histoire">
   <p>1423, Route de Repenti, 83590 Gonfaron, France</p>
 </footer>
 
