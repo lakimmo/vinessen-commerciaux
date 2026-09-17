@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinessen - Every Bottle Tells a Story</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Vinessen - Chaque bouteille raconte une histoire</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -343,24 +344,6 @@
   .step-card.step-full .step-num{margin-bottom:6px;}
   .step-card.step-full h3{margin-bottom:6px;}
   .step-card.step-full > p{margin-bottom:18px;max-width:640px;}
-
-  /* --- light variant of the steps section --- */
-  .steps-light{background:var(--cream);}
-  .steps-light .step-card{
-    background:#FFFFFF;
-    border:1px solid rgba(56,42,32,0.12);
-    box-shadow:0 4px 16px rgba(56,42,32,0.05);
-  }
-  .steps-light .step-card h3{color:var(--ink);}
-  .steps-light .step-card p{color:var(--ink-soft);}
-  .steps-light .video-caption .wine-name{color:var(--ink);}
-  .steps-light .video-caption .wine-appellation{color:var(--ink-soft);}
-  .steps-light .step4-note h3{color:var(--ink);}
-  .steps-light .step4-note p{color:var(--ink-soft);}
-  .steps-light .demo-headline{color:var(--ink);}
-  .steps-light .demo-sub{color:var(--ink-soft);}
-  .steps-light .eyebrow.on-dark{color:var(--copper-deep);}
-  .steps-light .diff-highlight p{color:var(--ink-soft);}
 
   .video-gallery{
     display:grid;
@@ -748,32 +731,6 @@
   }
   .client-names span{white-space:nowrap;}
 
-  /* ================= INCLUDED LIST ================= */
-  .included-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px 34px;
-  }
-  .included-item{
-    display:flex;
-    gap:14px;
-    padding:16px 0;
-    border-bottom:1px solid rgba(56,42,32,0.09);
-  }
-  .included-item .ico{
-    flex:0 0 34px;
-    height:34px;
-    border-radius:50%;
-    border:1px solid var(--copper);
-    display:flex;align-items:center;justify-content:center;
-    color:var(--copper-deep);
-    font-family:'Cormorant Garamond',serif;
-    font-style:italic;
-    font-size:15px;
-  }
-  .included-item h4{font-size:15px;font-weight:600;margin-bottom:3px;}
-  .included-item p{font-size:13.3px;color:var(--ink-soft);}
-
   /* ================= WHATSAPP CTA SECTION ================= */
   .wa-cta-section{background:var(--bg-dark-2);}
   .wa-cta-box{
@@ -964,7 +921,7 @@
 
   /* ================= RESPONSIVE ================= */
   @media (max-width:780px){
-    .constat-grid,.steps,.two-col,.included-grid,.video-gallery{grid-template-columns:1fr;}
+    .constat-grid,.steps,.two-col,.video-gallery{grid-template-columns:1fr;}
     .trust-strip{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -1002,11 +959,11 @@
 <body>
 
 <div class="lang-switch">
-  <a href="/" class="active">EN</a>
-  <a href="/fr/">FR</a>
+  <a href="/">EN</a>
+  <a href="/fr/" class="active">FR</a>
 </div>
 
-<div class="top-tag">240+ references, <b>no minimum order</b></div>
+<div class="top-tag">240+ références, <b>sans minimum de commande</b></div>
 
 <!-- ================= HERO ================= -->
 <header class="hero">
@@ -1017,17 +974,17 @@
       <path d="M40 160 Q 90 100, 140 130 T 198 140" opacity="0.25"/>
     </svg>
   </div>
-  <img class="hero-logo" src="hero-logo.png" alt="Vinessen">
+  <img class="hero-logo" src="../hero-logo.png" alt="Vinessen">
   <span class="eyebrow on-dark">Vinessen</span>
-  <h1>What if your bottles <em>told</em><br>their own story?</h1>
-  <p class="lede">A QR code on the front label. A video of the winemaker tasting and presenting their own wine. Automatically subtitled in the consumer's language.</p>
+  <h1>Et si vos bouteilles <em>racontaient</em><br>leur propre histoire ?</h1>
+  <p class="lede">Un QR code sur l'étiquette avant. Une vidéo du vigneron dégustant et présentant son propre vin. Sous-titrée automatiquement dans la langue du consommateur.</p>
 
   <div class="hero-vsl-wrap">
-    <video class="hero-vsl-video" controls playsinline preload="metadata" src="hero-vsl-video.mp4"></video>
+    <video class="hero-vsl-video" controls playsinline preload="metadata" src="../presentation-vinessen-fr.mp4"></video>
   </div>
 
   <div class="divider-line"></div>
-  <div class="hero-baseline">Every bottle tells a story</div>
+  <div class="hero-baseline">Chaque bouteille raconte une histoire</div>
 </header>
 
 <!-- ================= TRUSTED-BY MARQUEE ================= -->
@@ -1058,36 +1015,36 @@
 <section class="dark steps-section">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow on-dark">How it works</span>
-      <h2 style="color:#F7F2E7;">Four simple steps</h2>
-      <p style="color:#F7F2E7; opacity:0.85; margin-top:12px;">Give your customers more than a bottle. Give them an experience.</p>
+      <span class="eyebrow on-dark">Comment ça marche</span>
+      <h2 style="color:#F7F2E7;">Quatre étapes simples</h2>
+      <p style="color:#F7F2E7; opacity:0.85; margin-top:12px;">Offrez à vos clients plus qu'une bouteille. Offrez-leur une expérience.</p>
     </div>
 
     <div class="steps">
       <div class="step-card step-side">
         <div class="step-body">
-          <div class="step-num"><span class="dot"></span>Step 1</div>
-          <h3>You choose</h3>
-          <p>We offer 240 references spanning every style and region. 51 of them already come with their own winemaker video, and 90+ more are on the way. Build your assortment exactly as you need it: no minimum order.</p>
+          <div class="step-num"><span class="dot"></span>Étape 1</div>
+          <h3>Vous choisissez</h3>
+          <p>Nous proposons 240 références couvrant tous les styles et toutes les régions. 51 d'entre elles disposent déjà de leur propre vidéo du vigneron, et 90 de plus sont en préparation. Vous composez votre gamme exactement comme vous le souhaitez : sans minimum de commande.</p>
         </div>
       </div>
 
       <div class="step-card step-side">
         <div class="step-body">
-          <div class="step-num"><span class="dot"></span>Step 2</div>
-          <h3>They scan</h3>
-          <p>In a world where most bottles are picked on price or label alone, ours stands out for a different reason: a discreet QR code built into the front label, hinting at a story waiting to be discovered. One scan is all it takes.</p>
+          <div class="step-num"><span class="dot"></span>Étape 2</div>
+          <h3>Ils scannent</h3>
+          <p>Dans un monde où la plupart des bouteilles se choisissent au prix ou à l'étiquette, la nôtre se distingue autrement : un QR code discret intégré à l'étiquette avant, qui laisse deviner une histoire à découvrir. Un simple scan suffit.</p>
         </div>
       </div>
 
       <div class="step-card step-full">
-        <div class="step-num"><span class="dot"></span>Step 3</div>
-        <h3>They watch</h3>
-        <p>With family, over an aperitif, at the table, or alone - your customer tastes the wine alongside the winemaker's own story and tasting tips. In one minute, something even someone who's never really "understood" wine can follow. A genuine experience, for wine lovers and first-timers alike. A few examples below (automatically subtitled in 15 languages).</p>
+        <div class="step-num"><span class="dot"></span>Étape 3</div>
+        <h3>Ils regardent</h3>
+        <p>En famille, autour d'un apéritif, à table ou seul - votre client déguste le vin tout en découvrant l'histoire du vigneron et ses conseils de dégustation. En une minute, même quelqu'un qui n'a jamais vraiment « compris » le vin peut suivre. Une expérience authentique, pour les amateurs comme pour les novices. Quelques exemples ci-dessous (sous-titrés automatiquement en 15 langues).</p>
         <div class="video-gallery">
           <div class="video-item">
             <div class="video-thumb has-poster" onclick="vinessenOpenVideo('1187461640')">
-              <img class="video-poster-img" src="video-poster-1.jpg" alt="Fanny Lamoot, Domaine de La Garnaude">
+              <img class="video-poster-img" src="../video-poster-1.jpg" alt="Fanny Lamoot, Domaine de La Garnaude">
               <div class="play-btn"></div>
             </div>
             <div class="video-caption">
@@ -1097,17 +1054,17 @@
           </div>
           <div class="video-item">
             <div class="video-thumb has-poster" onclick="vinessenOpenVideo('1184578525')">
-              <img class="video-poster-img" src="video-poster-2.jpg" alt="Jean-Luc Dumoutier, Domaine de l'Olivette">
+              <img class="video-poster-img" src="../video-poster-2.jpg" alt="Jean-Luc Dumoutier, Domaine de l'Olivette">
               <div class="play-btn"></div>
             </div>
             <div class="video-caption">
               <span class="wine-name">Domaine de l'Olivette</span>
-              <span class="wine-appellation">Red - AOP Bandol</span>
+              <span class="wine-appellation">Rouge - AOP Bandol</span>
             </div>
           </div>
           <div class="video-item">
             <div class="video-thumb has-poster" onclick="vinessenOpenVideo('1166416400')">
-              <img class="video-poster-img" src="video-poster-3.jpg" alt="Mickaël Moltès, Domaine Moltès et Fils">
+              <img class="video-poster-img" src="../video-poster-3.jpg" alt="Mickaël Moltès, Domaine Moltès et Fils">
               <div class="play-btn"></div>
             </div>
             <div class="video-caption">
@@ -1122,11 +1079,11 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2.1l4 4-4 4"/><path d="M3 12.1v-2a4 4 0 0 1 4-4h14"/><path d="M7 21.9l-4-4 4-4"/><path d="M21 11.9v2a4 4 0 0 1-4 4H3"/></svg>
           </div>
           <div>
-            <div class="step-num"><span class="dot"></span>Step 4</div>
-            <h3>They come back</h3>
-            <p>Next time this customer shops for wine, they won't remember the price they paid - they'll remember the story they watched. That's what brings them back to your range, instead of a competitor's anonymous bottle.</p>
+            <div class="step-num"><span class="dot"></span>Étape 4</div>
+            <h3>Ils reviennent</h3>
+            <p>La prochaine fois que ce client achètera du vin, il ne se souviendra pas du prix payé - il se souviendra de l'histoire qu'il a vue. C'est ce qui le fait revenir vers votre gamme, plutôt que vers la bouteille anonyme d'un concurrent.</p>
             <div class="diff-highlight">
-              <p>A wine bought on price is easily replaced by the next one in line. A wine tied to a face and a story becomes a reason to come back.</p>
+              <p>Un vin acheté au prix se remplace facilement par le suivant. Un vin lié à un visage et une histoire devient une raison d'y revenir.</p>
             </div>
           </div>
         </div>
@@ -1135,9 +1092,9 @@
 
     <div class="demo-split">
       <div class="demo-split-left">
-        <span class="eyebrow on-dark">See it live</span>
-        <h3 class="demo-headline">This is what it<br>looks like <em>in real life.</em></h3>
-        <p class="demo-sub">Just a phone, a bottle, and a scan. The moment your customer discovers the story behind the label.</p>
+        <span class="eyebrow on-dark">En action</span>
+        <h3 class="demo-headline">Voici à quoi ça<br>ressemble <em>en vrai.</em></h3>
+        <p class="demo-sub">Juste un téléphone, une bouteille, et un scan. Le moment où votre client découvre l'histoire derrière l'étiquette.</p>
       </div>
       <div class="demo-split-right">
         <div class="phone-glow-wrap">
@@ -1148,7 +1105,7 @@
             <path d="M-15 230 Q 55 195, 100 240 T 215 210" opacity="0.22"/>
           </svg>
           <div class="phone-frame" id="vinessen-demo-frame" onclick="vinessenPlayDemo()">
-            <img class="video-poster-img" src="demo-poster.jpg" alt="Scanning a Vinessen QR-coded bottle">
+            <img class="video-poster-img" src="../demo-poster.jpg" alt="Scan d'une bouteille Vinessen avec QR code">
             <div class="play-btn"></div>
           </div>
         </div>
@@ -1160,9 +1117,9 @@
 <!-- video lightbox -->
 <div class="video-modal" id="vinessen-video-modal" onclick="if(event.target===this)vinessenCloseVideo()">
   <div class="video-modal-box">
-    <button class="video-modal-close" onclick="vinessenCloseVideo()">Close ✕</button>
+    <button class="video-modal-close" onclick="vinessenCloseVideo()">Fermer ✕</button>
     <div class="video-modal-inner" id="vinessen-video-inner"></div>
-    <div class="video-modal-fallback">Playback issue? <a href="#" id="vinessen-video-fallback-link" target="_blank" rel="noopener">Open the video on Vimeo</a></div>
+    <div class="video-modal-fallback">Problème de lecture ? <a href="#" id="vinessen-video-fallback-link" target="_blank" rel="noopener">Ouvrir la vidéo sur Vimeo</a></div>
   </div>
 </div>
 
@@ -1183,13 +1140,13 @@ function vinessenOpenVideo(id){
       return player.getTextTracks();
     }).then(function(tracks){
       if(!tracks || !tracks.length) return;
-      var browserLang = (navigator.language || 'en').split('-')[0].toLowerCase();
+      var browserLang = (navigator.language || 'fr').split('-')[0].toLowerCase();
       var match = tracks.find(function(t){
         return t.language && t.language.toLowerCase().indexOf(browserLang) === 0;
       });
       if(!match){
         match = tracks.find(function(t){
-          return t.language && t.language.toLowerCase().indexOf('en') === 0;
+          return t.language && t.language.toLowerCase().indexOf('fr') === 0;
         });
       }
       if(match){
@@ -1213,50 +1170,50 @@ function vinessenPlayDemo(){
   frame.dataset.loaded = "1";
   frame.onclick = null;
   frame.style.cursor = "default";
-  frame.innerHTML = '<video src="demo-video.mp4" controls autoplay playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>';
+  frame.innerHTML = '<video src="../scannez-video.mp4" controls autoplay playsinline style="width:100%;height:100%;object-fit:cover;display:block;"></video>';
 }
 </script>
 
 <!-- ================= RIBBON CALLBACK ================= -->
 <div class="ribbon">
-  <span class="serif">Scan. Watch. <b>Step into the story.</b></span>
+  <span class="serif">Scannez. Regardez. <b>Entrez dans l'histoire.</b></span>
 </div>
 
 <!-- ================= BENEFITS ================= -->
 <section>
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow">The benefits</span>
-      <h2>What this changes, in practice</h2>
+      <span class="eyebrow">Les bénéfices</span>
+      <h2>Ce que ça change, concrètement</h2>
     </div>
     <div class="two-col">
       <div class="benefit-panel accent">
-        <span class="eyebrow on-dark">For you</span>
-        <h3>A real lever of differentiation</h3>
+        <span class="eyebrow on-dark">Pour vous</span>
+        <h3>Un vrai levier de différenciation</h3>
         <ul>
-          <li><span class="mark">-</span>A disruptive offer in a category where everything looks alike</li>
+          <li><span class="mark">-</span>Une offre disruptive dans une catégorie où tout se ressemble</li>
           <li class="li-block">
-            <span class="mark">-</span>A concrete argument when selling into:
+            <span class="mark">-</span>Un argument concret pour convaincre vos points de vente :
             <ul class="benefit-sublist" style="margin-left:10px;margin-top:6px;">
-              <li><strong>Hospitality &amp; dining:</strong> makes wine accessible to guests even without a sommelier, turns each glass into an experience, and helps train staff</li>
-              <li><strong>Retail:</strong> offers something different that stands out on the shelf, where everything else looks the same</li>
-              <li><strong>E-commerce:</strong> fixes the problem of not being able to taste or ask questions - customers see the winemaker, hear the story, and buy with the same confidence as in a store</li>
+              <li><strong>Restauration &amp; hôtellerie :</strong> rend le vin accessible même sans sommelier, transforme chaque verre en expérience, et aide à former le personnel</li>
+              <li><strong>Vente au détail :</strong> propose quelque chose de différent qui se démarque, là où tout se ressemble</li>
+              <li><strong>E-commerce :</strong> résout le problème de ne pas pouvoir goûter ou poser de questions - vos clients voient le vigneron, entendent l'histoire, et achètent avec la même confiance qu'en boutique</li>
             </ul>
           </li>
-          <li><span class="mark">-</span>Access to 240+ references with no minimum order</li>
-          <li><span class="mark">-</span>A reason for your customers to come back for your range specially</li>
-          <li><span class="mark">-</span>Speaks to a younger generation, at ease with scanning and video</li>
+          <li><span class="mark">-</span>Accès à plus de 240 références, sans minimum de commande</li>
+          <li><span class="mark">-</span>Une raison pour vos clients de revenir spécifiquement vers votre gamme</li>
+          <li><span class="mark">-</span>Parle à une nouvelle génération, à l'aise avec le scan et la vidéo</li>
         </ul>
       </div>
       <div class="benefit-panel">
-        <span class="eyebrow">For your end customers</span>
-        <h3>An experience that builds connection</h3>
+        <span class="eyebrow">Pour vos clients finaux</span>
+        <h3>Une expérience qui crée du lien</h3>
         <ul>
-          <li><span class="mark">-</span>A tasting guided by the winemaker themselves, no jargon</li>
-          <li><span class="mark">-</span>Accessible in 3 seconds, with no app to install</li>
-          <li><span class="mark">-</span>Makes wine approachable - no expertise needed to taste the difference</li>
-          <li><span class="mark">-</span>Available 24/7, automatically in their own language</li>
-          <li><span class="mark">-</span>Turns a bottle into a gift with meaning - not just something to bring to dinner</li>
+          <li><span class="mark">-</span>Une dégustation guidée par le vigneron lui-même, sans jargon</li>
+          <li><span class="mark">-</span>Accessible en 3 secondes, sans application à installer</li>
+          <li><span class="mark">-</span>Rend le vin accessible - aucune expertise nécessaire pour percevoir la différence</li>
+          <li><span class="mark">-</span>Disponible 24h/24 et 7j/7, automatiquement dans leur langue</li>
+          <li><span class="mark">-</span>Transforme une bouteille en cadeau qui a du sens - pas juste quelque chose à apporter à un dîner</li>
         </ul>
       </div>
     </div>
@@ -1267,18 +1224,18 @@ function vinessenPlayDemo(){
 <section class="dark">
   <div class="wrap">
     <div class="section-head center">
-      <span class="eyebrow on-dark">Why Vinessen</span>
-      <h2 style="color:#F7F2E7;">20 years in the field, not a passing startup</h2>
-      <p>The video concept is new. The company behind it isn't - 20 years exporting across Europe, Australia, Africa, North America, and Asia.</p>
+      <span class="eyebrow on-dark">Pourquoi Vinessen</span>
+      <h2 style="color:#F7F2E7;">20 ans de métier, pas une start-up de passage</h2>
+      <p>Le concept vidéo est nouveau. L'entreprise qui le porte ne l'est pas - 20 ans à exporter à travers l'Europe, l'Australie, l'Afrique, l'Amérique du Nord et l'Asie.</p>
     </div>
     <div class="trust-strip">
-      <div class="trust-cell"><div class="big">20+</div><div class="lbl">Years of field experience</div></div>
-      <div class="trust-cell"><div class="big">240+</div><div class="lbl">Award-winning references</div></div>
-      <div class="trust-cell"><div class="big">70+</div><div class="lbl">Partner producers</div></div>
-      <div class="trust-cell"><div class="big">300+</div><div class="lbl">Professional clients</div></div>
+      <div class="trust-cell"><div class="big">20+</div><div class="lbl">Années d'expérience terrain</div></div>
+      <div class="trust-cell"><div class="big">240+</div><div class="lbl">Références primées</div></div>
+      <div class="trust-cell"><div class="big">70+</div><div class="lbl">Producteurs partenaires</div></div>
+      <div class="trust-cell"><div class="big">300+</div><div class="lbl">Clients professionnels</div></div>
     </div>
     <div class="client-row">
-      <span class="eyebrow on-dark">Already trusted by</span>
+      <span class="eyebrow on-dark">Ils nous font déjà confiance</span>
       <div class="client-names">
         <span>Lagardère Travel Retail</span>
         <span>Lotte Duty Free</span>
@@ -1295,32 +1252,32 @@ function vinessenPlayDemo(){
   <div class="wrap">
     <div class="section-head center">
       <span class="eyebrow">FAQ</span>
-      <h2>Common questions</h2>
+      <h2>Questions fréquentes</h2>
     </div>
     <div class="faq-list">
       <details class="faq-item" open>
-        <summary>Is Vinessen a video-tech company or a wine distributor?</summary>
-        <p>We're a wine distributor first - 20+ years sourcing and exporting from independent producers across Europe, Australia, Africa, North America, and Asia. The QR-code/video concept is something we've built on top of that, not instead of it. You're still working with a distributor; this is simply how a growing part of our catalog now comes to life in the bottle.</p>
+        <summary>Vinessen est-elle une entreprise de vidéo ou un distributeur de vin ?</summary>
+        <p>Nous sommes avant tout un distributeur de vin - plus de 20 ans à sourcer auprès de producteurs indépendants et à exporter à travers l'Europe, l'Australie, l'Afrique, l'Amérique du Nord et l'Asie. Le concept QR code/vidéo est quelque chose que nous avons construit en plus, pas à la place. Vous continuez de travailler avec un distributeur ; c'est simplement la façon dont une part croissante de notre catalogue prend désormais vie dans la bouteille.</p>
       </details>
       <details class="faq-item">
-        <summary>Do the winemaker videos cost extra?</summary>
-        <p>No. The QR code and video are included in the price of the bottle - there's no licensing fee, no per-scan cost, nothing added to your invoice.</p>
+        <summary>Les vidéos des vignerons coûtent-elles un supplément ?</summary>
+        <p>Non. Le QR code et la vidéo sont inclus dans le prix de la bouteille - aucun frais de licence, aucun coût par scan, rien d'ajouté à votre facture.</p>
       </details>
       <details class="faq-item">
-        <summary>Do all 240 references come with a video?</summary>
-        <p>Not yet. 51 references already have their own winemaker video today, and 90+ more are in production. The rest remain available exactly as a normal wine order.</p>
+        <summary>Est-ce que les 240 références ont toutes une vidéo ?</summary>
+        <p>Pas encore. 51 références disposent déjà aujourd'hui de leur propre vidéo du vigneron, et plus de 90 autres sont en préparation. Le reste demeure disponible exactement comme pour une commande de vin classique.</p>
       </details>
       <details class="faq-item">
-        <summary>Can I choose which references get the QR code, or is it fixed?</summary>
-        <p>Yes, it's up to you. Not every reference needs to launch with a QR code from day one. Many importers start by testing it on just a handful of references, see how their customers respond, then expand from there.</p>
+        <summary>Puis-je choisir quelles références reçoivent le QR code, ou est-ce fixe ?</summary>
+        <p>Oui, c'est vous qui décidez. Chaque référence n'a pas besoin de démarrer avec un QR code dès le premier jour. Beaucoup d'importateurs commencent par le tester sur une poignée de références, observent la réaction de leurs clients, puis étendent progressivement.</p>
       </details>
       <details class="faq-item">
-        <summary>Do I need to change anything on my end - packaging, import process, customs?</summary>
-        <p>No changes needed. The QR code is printed directly on the front label before the bottle ships to you - it's imported, stored, and sold exactly like any other bottle.</p>
+        <summary>Dois-je changer quoi que ce soit de mon côté - conditionnement, import, douane ?</summary>
+        <p>Aucun changement nécessaire. Le QR code est imprimé directement sur l'étiquette avant que la bouteille ne vous soit expédiée - elle est importée, stockée et vendue exactement comme n'importe quelle autre bouteille.</p>
       </details>
       <details class="faq-item">
-        <summary>What languages are the videos available in?</summary>
-        <p>Videos are automatically subtitled in French, English, Russian, Thai, Portuguese, Vietnamese, German, Chinese, Spanish, Korean, Arabic, Japanese, Polish, and Italian. Not on the list? We can easily add subtitles in your language, or any other language you need.</p>
+        <summary>Dans quelles langues les vidéos sont-elles disponibles ?</summary>
+        <p>Les vidéos sont automatiquement sous-titrées en français, anglais, russe, thaï, portugais, vietnamien, allemand, chinois, espagnol, coréen, arabe, japonais, polonais et italien. Votre langue n'est pas dans la liste ? Nous pouvons facilement ajouter des sous-titres dans votre langue, ou toute autre langue dont vous avez besoin.</p>
       </details>
     </div>
   </div>
@@ -1330,14 +1287,14 @@ function vinessenPlayDemo(){
 <section class="wa-cta-section">
   <div class="wrap">
     <div class="wa-cta-box">
-      <span class="eyebrow on-dark">Talk to us</span>
-      <h2>Interested, or have a question?</h2>
-      <p>Message me or call me (Anthony - CEO Vinessen) directly on WhatsApp.</p>
-      <a class="wa-inline-cta" href="https://wa.me/33646396070?text=Hi%20Anthony%2C%20I%20came%20from%20your%20partner%20site%20and%20I%27m%20interested%20in%20learning%20more." target="_blank" rel="noopener">
+      <span class="eyebrow on-dark">Parlons-en</span>
+      <h2>Une question, envie d'en savoir plus ?</h2>
+      <p>Écrivez-moi ou appelez-moi (Anthony - CEO Vinessen) directement sur WhatsApp.</p>
+      <a class="wa-inline-cta" href="https://wa.me/33646396070?text=Bonjour%20Anthony%2C%20je%20viens%20de%20votre%20site%20partenaire%20et%20je%20suis%20int%C3%A9ress%C3%A9%20pour%20en%20savoir%20plus." target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.72.45 3.39 1.3 4.87L2 22l5.35-1.4a9.87 9.87 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.17.83.85-3.09-.2-.32a8.19 8.19 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.42 5.83c0 4.55-3.7 8.24-8.24 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09 0 1.23.9 2.42 1.02 2.59.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
-        Chat on WhatsApp
+        Discuter sur WhatsApp
       </a>
-      <p class="wa-cta-email">Or by email: <a href="mailto:a.lamoot@vinessen.fr">a.lamoot@vinessen.fr</a> - +33 6 46 39 60 70</p>
+      <p class="wa-cta-email">Ou par email : <a href="mailto:a.lamoot@vinessen.fr">a.lamoot@vinessen.fr</a> - +33 6 46 39 60 70</p>
     </div>
   </div>
 </section>
@@ -1351,25 +1308,25 @@ function vinessenPlayDemo(){
     </svg>
   </div>
   <div class="closing-box">
-    <span class="eyebrow on-dark">Next step</span>
-    <h2>Discover more</h2>
+    <span class="eyebrow on-dark">Prochaine étape</span>
+    <h2>Découvrez-en plus</h2>
 
     <div class="closing-video-wrap">
-      <video class="closing-video" width="590" height="790" controls playsinline preload="metadata" src="closing-video.mp4"></video>
-      <video class="closing-video" width="590" height="790" controls playsinline preload="metadata" src="Vinessen%20vinessen.fr%20Instagram%20photos%20and%20videos.mp4"></video>
+      <video class="closing-video" width="590" height="790" controls playsinline preload="metadata" src="../experience-vinessen.mp4"></video>
+      <video class="closing-video" width="590" height="790" controls playsinline preload="metadata" src="../instagram-video.mp4"></video>
     </div>
 
     <p class="closing-link-block">
-      <a class="cta-btn" href="https://vinessen.fr/en/" target="_blank" rel="noopener">
+      <a class="cta-btn" href="https://vinessen.fr/" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
-        See the site & all our wine videos
+        Voir le site et toutes nos vidéos de vin
       </a>
     </p>
   </div>
 </section>
 
 <footer>
-  <img src="footer-logo.png" alt="Vinessen - Every bottle tells a story">
+  <img src="../footer-logo.png" alt="Vinessen - Chaque bouteille raconte une histoire">
   <p>1423, Route de Repenti, 83590 Gonfaron, France</p>
 </footer>
 
@@ -1427,16 +1384,16 @@ function vinessenPlayDemo(){
 
 <button id="wa-widget-btn" onclick="waOpen();">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.72.45 3.39 1.3 4.87L2 22l5.35-1.4a9.87 9.87 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.17.83.85-3.09-.2-.32a8.19 8.19 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.42 5.83c0 4.55-3.7 8.24-8.24 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09 0 1.23.9 2.42 1.02 2.59.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
-  <span class="wa-label">Let's talk</span>
+  <span class="wa-label">Discutons</span>
 </button>
 
 <div id="wa-widget-panel">
   <button id="wa-widget-close" onclick="waClose();">&times;</button>
   <div class="wa-name">Anthony LAMOOT</div>
   <div class="wa-role">CEO · Vinessen</div>
-  <a class="wa-cta" href="https://wa.me/33646396070?text=Hi%20Anthony%2C%20I%20came%20from%20your%20partner%20site%20and%20I%27m%20interested%20in%20learning%20more." target="_blank" rel="noopener">
+  <a class="wa-cta" href="https://wa.me/33646396070?text=Bonjour%20Anthony%2C%20je%20viens%20de%20votre%20site%20partenaire%20et%20je%20suis%20int%C3%A9ress%C3%A9%20pour%20en%20savoir%20plus." target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.72.45 3.39 1.3 4.87L2 22l5.35-1.4a9.87 9.87 0 0 0 4.69 1.19h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.06h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.17.83.85-3.09-.2-.32a8.19 8.19 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.42 5.83c0 4.55-3.7 8.24-8.24 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09 0 1.23.9 2.42 1.02 2.59.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
-    Chat on WhatsApp
+    Discuter sur WhatsApp
   </a>
   <p class="wa-widget-phone">+33 6 46 39 60 70</p>
 </div>
